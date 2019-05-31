@@ -1,0 +1,16 @@
+<table class="tg">
+  <tr>
+    <th class="tg-0pky">Email</th>
+    <th class="tg-0pky"><%= link_to 'First name', root_path(order: {first_name: order_direction(:first_name)}), remote: true %></th>
+    <th class="tg-0pky"><%= link_to 'Last name', root_path(order: {last_name: order_direction(:last_name)}), remote: true %></th>
+    <th class="tg-0pky">Amount</th>
+  </tr>
+  <% transactions.each do |transaction| %>
+    <tr>
+      <td class="tg-7d57"><%= transaction.email %></td>
+      <td class="tg-7d57"><%= transaction.first_name %></td>
+      <td class="tg-7d57"><%= transaction.last_name %></td>
+      <td class="tg-7d57"><%= number_to_currency(transaction.amount) %></td>
+    </tr>
+  <% end %>
+</table>

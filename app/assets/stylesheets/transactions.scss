@@ -1,0 +1,62 @@
+.tg {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: none;
+  border-color: #aaa;
+  margin: 0px auto;
+  td {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 0px;
+    overflow: hidden;
+    word-break: normal;
+    border-color: #aaa;
+    color: #333;
+    background-color: #fff;
+  }
+  th {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 0px;
+    overflow: hidden;
+    word-break: normal;
+    border-color: #aaa;
+    color: #fff;
+    background-color: #f38630;
+  }
+  .tg-7d57 {
+    background-color: #FCFBE3;
+    border-color: inherit;
+    text-align: left;
+    vertical-align: top;
+  }
+  .tg-0pky {
+    border-color: inherit;
+    text-align: left;
+    vertical-align: top;
+  }
+}
+@media screen and (max-width: 767px) {
+  .tg {
+    width: auto !important;
+    col {
+      width: auto !important;
+    }
+  }
+  .tg-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: auto 0px;
+  }
+}
+.transaction-form {
+  text-align: center;
+}
+.errors {
+  text-align: center;
+}

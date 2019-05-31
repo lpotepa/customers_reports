@@ -1,0 +1,21 @@
+<div class="tg-wrap">
+  <%= render 'table', transactions: @transactions %>
+  <div class="transaction-form">
+    <%= form_for @transaction, remote: true do |f| %>
+      <%= f.label :email %>:
+      <%= f.text_field :email %><br />
+
+      <%= f.label :first_name %>:
+      <%= f.text_field :first_name %><br />
+
+      <%= f.label :last_name %>:
+      <%= f.text_field :last_name %><br />
+
+      <%= f.label :amount %>:
+      <%= f.number_field :amount, step: :any %><br />
+
+    <%= f.submit %>
+  </div>
+  <% end %>
+  <div class="errors"></div>
+</div>
